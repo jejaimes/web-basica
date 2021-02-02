@@ -81,9 +81,11 @@
 
       <section>
         <h2 id="intereses">Sitios de interés</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lTw20-gAL2U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/qTHBaqNQZyA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ziClMd_dgFw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XtaEnxG2lbg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         <p><a href="https://www.chess.com">Sitio en el que juego ajedrés</a></p>
         <p><a href="https://mangadex.org">Sitio en el que leo manga</a></p>
 
@@ -91,14 +93,37 @@
           <img src="data/pekora.jpeg" alt="Pekora meme">
         </picture>
         <picture>
+          <source media="(max-width: 1200px)" srcset="data/hololive600.jpg">
+          <source media="(min-width: 1200px)" srcset="data/hololive.jpeg">
           <img src="data/hololive.jpeg" alt="All the hololive members">
         </picture>
       </section>
 
       <section>
         <h2 id="formulario">Formulario de contacto</h2>
+        <form action="/contacto" method="post">
+          <div>
+            <div>
+              <label for="nombre">Nombre:</label><br>
+              <input type="text" id="nombre" name="nombre_usuario">
+            </div>
+            <div>
+              <label for="mail">E-mail:</label><br>
+              <input type="email" id="mail" name="email_usuario">
+            </div>
+            <div>
+              <label for="msj">Mensaje:</label><br>
+              <textarea id="msj" name="mensaje_usuario"></textarea>
+            </div>
+            <div>
+              <button type="submit">Enviar mensaje</button>
+            </div>
+          </div>
+         </form>
       </section>
     </main>
+
+    <hr>
 
     <!--Pie de página-->
     <footer>
